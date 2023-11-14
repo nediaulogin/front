@@ -1,13 +1,18 @@
-import Navbar from "@/componentes/Navbar"
+import Navbar from "@/componentes/Navbar";
 
 export default function Home() {
-  return (
-    <div>
-      <Navbar />
+  return (<>
+    <div className="h-screen">
+      <div className="">
+        <Navbar />
+      </div>
+      <div className="flex items-center justify-center mt-20">
+        <h1 className="text-4xl font-bold mr-2 text-black">Bem-vindo ao </h1>
+        <h1 className="text-4xl font-bold bg-black text-yellow-500 p-2 rounded-md"> Costs</h1>
+        <h2 className=""></h2>
 
-      <h1>Home</h1>
-
-
+      </div>
     </div>
+  </>
   )
 }
