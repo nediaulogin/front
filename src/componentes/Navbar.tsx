@@ -3,9 +3,9 @@ import Container from "./layout/Container"
 
 const Navbar = () => {
     return (
-        <nav className=''>
+        <nav className='bg-black'>
             <Container>
-                <ul className=''>
+                <ul className='space-x-4 text-zinc-200'>
                     <li>
                         <Link href="/">home</Link>
                     </li>
