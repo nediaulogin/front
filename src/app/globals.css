@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* nav estilos */
 
 .nav-li {
     @apply hover:text-yellow-300 text-2xl text-zinc-200
+}
+
+.nav {
+    @apply bg-zinc-950 justify-between flex p-5
+}
+
+.nav-ul {
+    @apply space-x-7 flex items-center
 }
