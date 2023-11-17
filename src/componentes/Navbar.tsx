@@ -1,26 +1,32 @@
+import Image from "next/image"
 import Link from "next/link"
-import Container from "./layout/Container"
+import logo from "../img/costs_logo.png"
 
 const Navbar = () => {
     return (
-        <nav className='bg-black'>
-            <Container>
-                <ul className='space-x-4 text-zinc-200'>
-                    <li>
-                        <Link href="/">home</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">sobre</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">contato</Link>
-                    </li>
-                    <li>
-                        <Link href="/newProject">projeto</Link>
-                    </li>
-                </ul>
-            </Container>
-        </nav>
+        <div className='bg-zinc-950 justify-between flex p-5'>
+
+            <Link href="/">
+                <Image src={logo} alt="Logo" width={70} height={70} />
+            </Link>
+            <ul className='flex space-x-7 items-center'>
+
+                <li className="nav-li">
+                    <Link href="/">Home</Link>
+                </li >
+                <li className="nav-li">
+                    <Link href="/about">Projetos</Link>
+                </li>
+                <li className="nav-li">
+                    <Link href="/contact">Empresa</Link>
+                </li>
+                <li className="nav-li">
+                    <Link href="/newProject">Contato</Link>
+                </li>
+
+            </ul>
+
+        </div>
     )
 }
 
