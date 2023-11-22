@@ -7,10 +7,16 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+
     extend: {
+      minHeight: {
+        '3/4': '75vh',
+        '2/3': '70vh',
+      },
       backgroundImage: {},
     },
   },
   plugins: [],
+
 }
 export default config

@@ -9,9 +9,24 @@
 }
 
 .nav {
-    @apply bg-zinc-950 justify-between flex p-5
+    @apply bg-zinc-950 justify-between flex p-[1em]
 }
 
 .nav-ul {
     @apply space-x-7 flex items-center
+}
+
+/* footer estilos */
+
+
+.footer {
+    @apply bg-zinc-950 flex gap-2 justify-center items-center p-[1em] text-white
+}
+
+.footer-ul {
+    @apply flex-col space-y-3
+}
+
+.footer-li {
+    @apply hover:text-yellow-300
 }
