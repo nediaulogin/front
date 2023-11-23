@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
-import Footer from '../componentes/Footer'
-import Navbar from '../componentes/Navbar'
+import Footer from '../componentes/layout/Footer'
+import Navbar from '../componentes/layout/Navbar'
 import './globals.css'
 
 const openSans = Open_Sans({
