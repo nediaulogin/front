@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* nav estilos */
+
+body {
+    @apply bg-zinc-200
+}
+
+                /* header estilos */
+
+.h1 {
+    @apply text-4xl font-bold text-zinc-950
+}
+
+                /* nav estilos */
 
 .nav-li {
     @apply hover:text-yellow-300 text-2xl text-zinc-200
@@ -16,8 +27,7 @@
     @apply space-x-7 flex items-center
 }
 
-/* footer estilos */
-
+                /* footer estilos */
 
 .footer {
     @apply bg-zinc-950 flex gap-2 justify-center items-center p-[1em] text-white
@@ -30,3 +40,18 @@
 .footer-li {
     @apply hover:text-yellow-300
 }
+
+.footer-a {
+    @apply hover:text-yellow-300
+}
+
+                /* form estilos */
+
+.form {
+    @apply flex flex-col w-full my-[2em]
+}
+
+.form_input {
+    @apply  border p-2 rounded-md border-zinc-400 block w-full bg-gray-200 text-gray-700 focus:outline-none focus:bg-white
+}
+
