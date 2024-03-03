@@ -1,4 +1,6 @@
+'use client'
 import ProjectForm from "@/componentes/project/ProjectForm";
+
 
 export default function NewProject() {
     return (
