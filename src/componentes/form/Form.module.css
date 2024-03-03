@@ -1,0 +1,23 @@
+.form {
+    @apply flex flex-col w-[500px]  my-[2em]
+}
+
+.form_input {
+    @apply mb-3 p-2 rounded-md border block w-full bg-white text-gray-700 focus:outline-none h-12
+}
+
+.form_label {
+    @apply text-gray-950 text-xl font-semibold flex mb-3
+}
+
+.form_button {
+    @apply bg-zinc-950 p-2 border-black w-32
+}
+
+.form_select { 
+    @apply mb-3 p-2 rounded-md border block w-full bg-white text-gray-700 focus:outline-none h-12
+}
+
+.form_button {
+    @apply bg-zinc-950 p-2 border-black w-32 text-white
+}
