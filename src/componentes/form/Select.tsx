@@ -6,7 +6,7 @@ type inputProps = {
     name?: string,
     value?: string,
     options?: any,
-    handleOnChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
+    handleOnChange?: any
 
 }
 
@@ -15,7 +15,12 @@ export default function Select({ type, text, name, value, handleOnChange, option
     return (
         <div>
             <label className={styles.form_label} htmlFor={name}>{text}</label>
-            <select className={styles.form_select} name={name} id={name}>
+            <select className={styles.form_select}
+                name={name}
+                id={name}
+                onChange={handleOnChange}
+                value={value || ''}
+            >
                 <option>Selecione uma opção</option>
                 {options.map((option: any) => (
                     <option key={option.id} value={option.id}>{option.infra}</option>

@@ -15,7 +15,8 @@ export default function Input({ type, text, name, placeholder, value, handleOnCh
     return (
         <div>
             <label className={styles.form_label} htmlFor={name}>{text}</label>
-            <input className={styles.form_input} type={type}
+            <input className={styles.form_input}
+                type={type}
                 id={name}
                 name={name}
                 placeholder={placeholder}
