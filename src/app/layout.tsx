@@ -1,3 +1,4 @@
+import TanstackProvider from '@/componentes/providers/TanstackProvider'
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import Footer from '../componentes/layout/Footer'
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body className={openSans.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <TanstackProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </TanstackProvider>
       </body>
     </html>
   )
