@@ -4,7 +4,7 @@
 
 
 body {
-    @apply bg-zinc-200
+    @apply bg-zinc-300
 }
 
                 /* header estilos */
@@ -43,15 +43,5 @@ body {
 
 .footer-a {
     @apply hover:text-yellow-300
-}
-
-                /* form estilos */
-
-.form {
-    @apply flex flex-col w-full my-[2em]
-}
-
-.form_input {
-    @apply  border p-2 rounded-md border-zinc-400 block w-full bg-gray-200 text-gray-700 focus:outline-none focus:bg-white
 }
 
