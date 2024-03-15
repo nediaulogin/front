@@ -12,7 +12,9 @@ body {
 .h1 {
     @apply text-4xl font-bold text-zinc-950
 }
-
+.h4 {
+    @apply text-xl font-bold text-zinc-950
+}
                 /* nav estilos */
 
 .nav-li {
@@ -45,3 +47,32 @@ body {
     @apply hover:text-yellow-300
 }
 
+/* Cards */
+
+.card {
+    @apply border-2 border-zinc-600 m-3 p-4 rounded-lg w-[300px] h-[220px]
+}
+
+.card-name {
+    @apply bg-black border-2 p-2 text-yellow-300 text-xl font-semibold mb-3
+}
+
+.card-p {
+    @apply mb-2
+}
+
+.card-span {
+    @apply font-bold
+}
+
+.card-planejamento {
+    @apply text-yellow-300
+}
+
+.card-design {
+    @apply text-red-800
+}
+
+.card-desenvolvimento {
+    @apply text-green-600
+}

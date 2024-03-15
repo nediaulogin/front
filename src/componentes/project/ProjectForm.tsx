@@ -9,7 +9,7 @@ export default function ProjectForm({ handleSubmit, projectData }: any) {
     const [project, setProject] = useState(projectData || {})
 
     useEffect(() => {
-        fetch('http://localhost:3001/categories', {
+        fetch('https://65ecf85c0ddee626c9b10ef5.mockapi.io/categories', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
