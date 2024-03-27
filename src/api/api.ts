@@ -6,6 +6,11 @@ async function getProjects() {
     return response.data;
 }
 
+async function getCategories() {
+    const response = await axios.get("https://65ecf85c0ddee626c9b10ef5.mockapi.io/categories");
+    return response.data;
+}
+
 async function getProject(id: string) {
     const response = await axios.get(`${URL}/${id}`);
     return response.data;
@@ -28,6 +33,10 @@ async function updateProject(project: any) {
 
 export const api = {
     createProject,
-    deleteProject, getProject, getProjects, updateProject
+    deleteProject,
+    getProject,
+    getCategories,
+    getProjects,
+    updateProject
 };
 

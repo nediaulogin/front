@@ -22,7 +22,7 @@ export default function Select({ type, text, name, value, handleOnChange, option
                 value={value || ''}
             >
                 <option>Selecione uma opção</option>
-                {options.map((option: any) => (
+                {options && options.map((option: any) => (
                     <option key={option.id} value={option.id}>{option.infra}</option>
 
                 ))}

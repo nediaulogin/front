@@ -10,7 +10,7 @@ export function useCreateProject() {
             console.log('onMutate:');
         },
         onSuccess: () => {
-            console.log('Success:');
+
             router.push('/projects')
         },
         onError: (error) => {

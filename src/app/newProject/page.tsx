@@ -10,11 +10,11 @@ export default function NewProject() {
     const router = useRouter()
     const createMutation = useCreateProject()
     const submit = (project: any) => {
+        project.cost = 0
+        project.services = []
         createMutation.mutate(project)
 
     }
-    // project.cost = 0
-    // project.services = []
 
     // fetch('http://localhost:3001/projects', {
     //     method: 'POST',

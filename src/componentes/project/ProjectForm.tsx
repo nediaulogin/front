@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react';
+import { api } from '@/api/api';
+import { useQuery } from '@tanstack/react-query';
+import { useState } from 'react';
 import { SubmitButton } from '../btn/btn';
 import styles from "../form/Form.module.css";
 import Input from "../form/Input";
@@ -8,16 +10,8 @@ export default function ProjectForm({ handleSubmit, projectData }: any) {
     const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
 
-    useEffect(() => {
-        fetch('https://65ecf85c0ddee626c9b10ef5.mockapi.io/categories', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        }).then(response => response.json()).then(data => {
-            setCategories(data)
-        }).catch((error) => console.error('Error:', error));
-    }, [])
+    const { data, isError, isLoading } = useQuery({ queryKey: ['category-list'], queryFn: api.getCategories })
+
 
     const submit = (e: any) => {
         e.preventDefault()
@@ -60,7 +54,7 @@ export default function ProjectForm({ handleSubmit, projectData }: any) {
             <Select
                 name="category_id"
                 text="Selecione"
-                options={categories}
+                options={data}
                 handleOnChange={handleCategory}
                 value={project.category ? project.category.id : ''} />
 
