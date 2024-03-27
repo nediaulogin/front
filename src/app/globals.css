@@ -50,15 +50,15 @@ body {
 /* Cards */
 
 .card {
-    @apply border-2 border-zinc-600 m-3 p-4 rounded-lg w-[300px] h-[220px]
+    @apply border border-zinc-600 m-3 p-4 rounded-lg w-[300px] h-[220px] shadow-lg
 }
 
 .card-name {
-    @apply bg-black border-2 p-2 text-yellow-300 text-xl font-semibold mb-3
+    @apply bg-zinc-950 border-2 p-2 text-white text-xl font-semibold mb-3 rounded-md 
 }
 
 .card-p {
-    @apply mb-2
+    @apply mb-2 ml-2
 }
 
 .card-span {
@@ -66,9 +66,9 @@ body {
 }
 
 .card-remove {
-    @apply p-1 border-2 w-24 flex justify-center items-center text-red-500  border-zinc-700 m-3  hover:bg-zinc-900
+    @apply p-1 border-2 w-24 flex rounded-sm justify-center items-center text-red-500  border-zinc-700 m-3  hover:bg-zinc-900
 }
 
 .card-edit {
-    @apply  p-1 border-2 w-24 flex justify-center items-center text-green-600  border-zinc-700 m-3 hover:bg-zinc-900
+    @apply  p-1 border-2 w-24 flex rounded-sm  justify-center items-center text-green-600  border-zinc-700 m-3 hover:bg-zinc-900
 }
