@@ -65,14 +65,10 @@ body {
     @apply font-bold
 }
 
-.card-planejamento {
-    @apply text-yellow-300
+.card-remove {
+    @apply p-1 border-2 w-24 flex justify-center items-center text-red-500  border-zinc-700 m-3  hover:bg-zinc-900
 }
 
-.card-design {
-    @apply text-red-800
-}
-
-.card-desenvolvimento {
-    @apply text-green-600
+.card-edit {
+    @apply  p-1 border-2 w-24 flex justify-center items-center text-green-600  border-zinc-700 m-3 hover:bg-zinc-900
 }

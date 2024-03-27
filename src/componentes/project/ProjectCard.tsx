@@ -1,3 +1,4 @@
+import { LuPen, LuTrash2 } from "react-icons/lu";
 
 
 
@@ -13,8 +14,10 @@ export default function ProjectCard(project: any) {
             <p className="card-p">
                 <span></span>{project.category.name}
             </p>
-            <p className={`card-${project.category.name}`}>editar</p>
-            <p className="card-p">remover</p>
+            <div className="flex justify-between">
+                <p className="card-edit"><LuPen />editar</p>
+                <p className="card-remove"><LuTrash2 />excluir</p>
+            </div>
 
         </div>
     )

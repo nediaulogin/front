@@ -9,10 +9,17 @@ export default function Projects() {
     const { data, isError, isLoading } = useQuery({ queryKey: ['project-list'], queryFn: api.getProjects })
 
     return (
-        <div className="min-h-2/3 justify-between flex">
+        <div className="min-h-2/3 flex flex-col">
+            <div className="justify-between flex mt-4">
+                <div>
+                    <h1 className="h1 ml-3">Meus Projetos</h1>
+                </div>
+                <div className="m-4 min-w-max">
+                    <LinkButton to="/newProject" text="Criar projeto" />
+                </div>
+            </div>
             <div className="m-6">
-                <h1 className="h1">Meus Projetos</h1>
-                <div className="flex">
+                <div className="flex grid-cols-4 grid justify-center items-center">
 
                     {isLoading && <p>Carregando...</p>}
 
@@ -25,9 +32,6 @@ export default function Projects() {
                         </div>))}
 
                 </div>
-            </div>
-            <div className="m-4">
-                <LinkButton to="/newProject" text="Criar projeto" />
             </div>
         </div>
     )

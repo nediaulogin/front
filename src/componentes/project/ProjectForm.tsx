@@ -7,10 +7,9 @@ import Input from "../form/Input";
 import Select from "../form/Select";
 
 export default function ProjectForm({ handleSubmit, projectData }: any) {
-    const [categories, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
 
-    const { data, isError, isLoading } = useQuery({ queryKey: ['category-list'], queryFn: api.getCategories })
+    const { data } = useQuery({ queryKey: ['category-list'], queryFn: api.getCategories })
 
 
     const submit = (e: any) => {

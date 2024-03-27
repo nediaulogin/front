@@ -1,13 +1,10 @@
 'use client'
 import { useCreateProject } from "@/componentes/mutations/useCreate";
 import ProjectForm from "@/componentes/project/ProjectForm";
-import { useRouter } from "next/navigation";
 
 
 export default function NewProject() {
 
-
-    const router = useRouter()
     const createMutation = useCreateProject()
     const submit = (project: any) => {
         project.cost = 0
